@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tinh hoa hong</title>
+</head>
+<body>
+<!--Hoa hong 10%-->
+Doanh so ban hang cua ban(VND) :
+<input type="number" id="money">
+<button type="button" onclick="result()">Hoa hong</button>
+<p id="kq"></p>
+
+<script>
+    function result() {
+        let money = +document.getElementById("money").value;
+        let a = (money*10)/100;
+        let result = money + a;
+
+        document.getElementById("kq").innerHTML = 'Hoa hong cua ban la ' + result + ' VND';
+
+    }
+
+
+</script>
+</body>
+</html>

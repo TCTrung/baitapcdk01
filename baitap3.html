@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Nhap so :
+<input type="number" id="a" >
+<button type="button" onclick="result()">ket qua</button>
+<p id="result"></p>
+
+<script>
+    function result() {
+        let a = document.getElementById("a").value;
+        if (a > 0) {
+            document.getElementById("result").innerHTML = a + " lon hon 0";
+        }else if (a == 0) {
+            document.getElementById("result").innerHTML = 'day la so 0';
+        }else {
+        document.getElementById("result").innerHTML = a + " nho hon 0";}
+    }
+
+
+</script>
+</body>
+</html>

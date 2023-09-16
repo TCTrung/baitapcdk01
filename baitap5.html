@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Nhap diem kiem tra :
+<input type="number" id="a">
+Nhap diem thi giua ky :
+<input type="number" id="b">
+Nhap diem thi cuoi ky :
+<input type="number" id="c">
+<button onclick="kiemTra()">Kiểm tra</button>
+<p id="result1"></p>
+
+
+<script>
+    function kiemTra() {
+        let a = +document.getElementById("a").value;
+        let b = +document.getElementById("b").value;
+        let c = +document.getElementById("c").value;
+        let result = (a  + b + c)/3;
+
+        if(result >= 8 && result <= 10) {
+            document.getElementById("result1").innerHTML = "Hoc sinh gioi";
+        } else if(result >= 7 && result <8){
+            document.getElementById("result1").innerHTML = "Hoc sinh kha";
+        }else if (result > 5 && result < 7){
+            document.getElementById("result1").innerHTML = "Hoc sinh trung binh";
+        }else {
+            document.getElementById("result1").innerHTML = "Hoc sinh kem";
+        }
+    }
+
+</script>
+</body>
+</html>

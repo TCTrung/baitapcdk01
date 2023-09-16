@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tuoivaolop10</title>
+</head>
+<body>
+Nhap tuoi cua ban :
+<input type="number" id="year">
+<button type="button" onclick="result()">Xem ket qua</button>
+<p id="result"></p>
+
+<script>
+    function result() {
+        let year = +document.getElementById("year").value;
+
+        if (year < 16) {
+            document.getElementById("result").innerHTML = "Khong du tuoi vao lop 10";
+        }else {
+            document.getElementById("result").innerHTML = "Du tuoi vao lop 10";
+        }
+
+    }
+
+
+
+</script>
+</body>
+</html>

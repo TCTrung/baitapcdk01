@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cuocdienthoai</title>
+</head>
+<body>
+<!--Viettel 1 phut 1390vnd
+tu phut 20 tro di la 790vnd-->
+Nhap so phut ban da goi :
+<input type="number" id="time">
+<button type="button" onclick="result()">Tong tien</button>
+<p id="kq"></p>
+
+<script>
+    function result() {
+        let a = +document.getElementById("time").value;
+
+        if (a <= 20) {
+            let result = a*1390;
+            document.getElementById("kq").innerHTML = 'So tien cua ban la ' + result + " vnd";
+        }else {
+            let result1 = a*790;
+            document.getElementById("kq").innerHTML = 'So tien cua ban la ' + result1 + " vnd";
+        }
+
+    }
+
+
+</script>
+</body>
+</html>
